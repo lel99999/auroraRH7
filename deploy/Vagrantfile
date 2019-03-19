@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
 #   trigger.run = { path:"subscription-manager register --username <username> --password <password> --auto-attach"}
 # end
   config.vm.define "winClient01" do |winClient01|
-    winClient01.vm.box = "https://app.vagrantup.com/mwrock/boxes/Windows2012R2"
+#   winClient01.vm.box = "https://app.vagrantup.com/mwrock/boxes/Windows2012R2"
     winClient01.vm.box = "mwrock/Windows2012R2"
     winClient01.vm.hostname = "winClient01"
     winClient01.vm.network "private_network", ip: "192.168.60.170"
